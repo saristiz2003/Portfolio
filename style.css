@@ -1,0 +1,344 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap'); /* font from google i found */
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'LeagueSpartan';
+}
+
+body{
+    background-color: #CAD1C5;
+    color: #E0672F;
+}
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 50px;
+    color: #E0672F;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 22px;
+    color: #FE8A3F;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover
+.navbar a.active {
+    color: #00abf0;
+
+}
+
+
+
+
+body, html {
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+.home {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height:1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 590;
+    color: #35393b;
+}
+
+.home-content p{    
+font-size: 22px; 
+margin: 20px 0 40px;                                              
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height:50px;
+    
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background:#E0672F;
+    border: 2px solid #E0672F;
+    border-radius: 8px;
+    font-size:  19px;
+    color: #CAD1C5;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1; /* Z-index is order (front to back // postive -> negative) */
+    overflow:hidden; /* Hides the excess of layer used in animation for buttons */
+    transition: 0.3s;} /* time of transition for text color to change*/
+
+.btn-box a:hover{color: #E0672F;}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #E0672F;}/* Initial 2nd button text Color */
+
+.btn-box a:nth-child(2):hover{ 
+    color: #CAD1C5;}  /* 2nd button text turns this color on hover */
+
+.btn-box a:nth-child(2)::before{ 
+    background: #E0672F;}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height:100%;
+    background: #CAD1C5;
+z-index: -1; /* Z-index is order (front to back // postive -> negative) */
+transition: 0.5s;
+}
+
+.btn-box a:hover::before{
+    width:100%;
+}
+
+
+
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height:50px;
+}
+
+
+.about {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.about-content {
+    max-width: 400px;
+}
+
+.about-content h5{
+    font-size: 86px;
+    font-weight: 900;
+    line-height:1.2;
+    color: #35393b;
+}
+
+
+.about-content p2{    
+font-size: 30px; 
+margin: 20px 0 40px;  
+color: #c52f2f;                                            
+}
+
+
+.work {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.work-experience {
+    max-width: 400px;
+}
+
+.work-experience h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height:1.2;
+}
+.work-experience h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height:1.2;
+    color: #35393b;
+    text-align: center;
+}
+
+
+.work-experience p1{    
+font-size: 20px; 
+margin: 20px 0 40px;   
+text-align: center;                                           
+}
+
+.work-experience h3{
+    font-size: 40px;
+    font-weight: 700;
+    line-height:1.2;
+    color: #35393b;
+    text-align: center;
+}
+
+.work-experience p2{    
+    font-size: 20px; 
+    margin: 20px 0 40px;
+    text-align: center;
+                                                  
+    }
+
+
+    .portfolio {
+        height: 100vh;
+        display:flex;
+        align-items: center;
+        padding: 0 10%;
+    }
+    
+    .portfolio-content {
+        max-width: 400px;
+    }
+    
+    .portfolio-content h1{
+        font-size: 56px;
+        font-weight: 700;
+        line-height:1.2;
+    }
+    .portfolio-content h2{
+        font-size: 40px;
+        font-weight: 700;
+        line-height:1.2;
+        color: #35393b;
+        text-align: center;
+    }
+    
+    
+    .portfolio-content p1{    
+    font-size: 20px; 
+    margin: 20px 0 40px;   
+    text-align: center;                                           
+    }
+    
+    .portfolio-content h3{
+        font-size: 40px;
+        font-weight: 700;
+        line-height:1.2;
+        color: #35393b;
+        text-align: center;
+    }
+    
+    .portfolio-content p2{ font-size: 20px; margin: 20px 0 40px; text-align: center;}
+
+        * {
+            box-sizing: border-box;
+          }
+          
+          /* Style inputs */
+          input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+          }
+          
+          input[type=submit] {
+            background-color: #f8c34f;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #c52a24;
+          }
+          
+          /* Style the container/contact section */
+          .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+          }
+          
+          /* Create two columns that float next to eachother */
+          .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+          }
+          
+          /* Clear floats after the columns */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column, input[type=submit] {
+              width: 100%;
+              margin-top: 0;
+            }
+          }
+
+
+
+
+
+
+
+
+
+
+.footer p {
+    margin-top: 10px; /* added margin to footer to have text appear near center of foor bar*/
+    font-weight: 700;
+    font-size: 22px;
+} 

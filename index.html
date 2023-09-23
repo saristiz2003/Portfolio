@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" > <!-- Reccomened practice to add language type of webpage -->
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge" > <!-- ensures that IE uses the latest available rendering engine to render a web page --> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santiago's Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+<header class="header">
+    <a href="#" class="logo">Santiago Aristizabal.</a>
+     
+    <nav class="navbar">  <!-- NavBar hyper links to specified points on same page -->
+    <a href="#" class="active">Home</a>
+    <a href="#bbb" >About Me</a>
+    <a href="#ccc" >Work Experiences</a>
+    <a href="#ddd" >Portfolio</a>
+    <a href="#eee" >Contact Me</a>
+
+</nav>
+</header> 
+
+
+<div class=".hero-image"> <!-- Hero image -->
+    
+      <img src="suit pic.jpg" alt="me" style="position: absolute; top:260px; left: 1350px; width: 500px; height: 600px;"> <!-- Hero image with positioning on ride side of page ( may only appear for certain sized monitors) -->
+    </div>
+  
+
+
+
+<section class="home"> <!-- Home page. Has some text about the portfolio and 2 buttons  -->
+<div class="home-content">
+<h1> Hi, I'm Santiago Aristizabal,</h1>
+<h3>Software Engineering Student</h3>
+<p>Welcome to my online portfolio! I'm a dedicated software engineering student with a passion for solving complex problems through code. 
+    My portfolio showcases a range of projects, reflecting my commitment to quality and innovation. 
+    I invite you to explore my work and connect with me as I continue to grow and make an impact in the world of software engineering.</p>
+
+    <div class="btn-box">
+       <a href="">Let's Talk </a> <!-- both buttons here with some animations made in css -->
+       <a href="">Hire Me </a>
+    </div>
+</div>
+</section>
+
+
+
+<a id="bbb"></a>
+<section class="about">
+    
+
+    <div class="about-content"> <!-- about me content, wrote some generic paragraph in this class under the About me header -->
+    <h5> About Me,</h5>
+    <p2>Hey there! I'm Santiago, a 20-year-old with a passion for adventure. 
+        When I'm not chasing a soccer ball on the pitch, you'll find me seeking new horizons, 
+        whether that's mastering a new skill or carving through fresh powder on a snowboard.</p2>
+    
+        
+    </div>
+    </section>
+
+    <a id="ccc"></a>
+    <section class="work"> <!-- Work experience section of page where i listed 2 jobs with some generic descriptions -->
+        <div class="work-experience">
+            
+        <h1> Work Experiences</h1>
+        <h2> Bank Teller</h2>
+        <p1>As a Teller at X, I had the privilege of being on the front lines of banking, serving as a trusted point of contact for customers during my six-month tenure. 
+            This role not only honed my financial skills but also provided valuable insights into customer service and relationship building within the banking industry.</p1>
+        
+            <h3>Retail Worker</h3>
+            <p2>During my time as a Retail Sales Associate at Popular clothing Store, I had the opportunity to immerse myself in the dynamic world of fashion retail.
+                 This role allowed me to connect with diverse customers, provide exceptional service, and contribute to the success of a popular clothing store.</p2>
+
+            
+        </div>
+        </section>
+
+        <a id="ddd"></a>
+        <section class="portfolio"> <!-- Portofolio where i -->
+            <div class="portfolio-content">
+                
+            <h1> Personal Portfolio</h1>
+            <h2> Java Assigments</h2>
+            <p1>Embarking on a journey to harness the power of HTML and CSS to craft a stunning online portfolio. Stay tuned for a showcase of creativity, design, and technical prowess!</p1>
+            
+                <h3>Java Assigments</h3>
+                <p2>Diving into the world of Java programming, I'm on a mission to conquer the intricacies of this versatile language, one assignment at a time. 
+                    While these assignments may seem small, they're the building blocks of something much bigger.</p2>
+    
+                
+            </div>
+            </section>
+
+
+            <a id="eee"></a>
+            <div class="container"> <!-- used code sample to make a contact me form -->
+                <div style="text-align:center">
+                  <h2>Contact Me</h2>
+                  <p>leave me a message:</p>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <img src="KAWS.jpg" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="other">Other</option>
+                      </select>
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write a message" style="height:170px"></textarea>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+</body>
+
+
+
+
+<style> 
+    .footer { 
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 40px;
+      width: 100%;
+      background-color: #E0672F;
+      color: #454545;
+      text-align: center;
+    }
+    </style>
+    
+    <div class="footer">
+      <p>Santiago's Portfolio</p>
+    </div>
+
+
+
+
+
+    </html>
